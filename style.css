@@ -299,12 +299,9 @@ nav ol li a:hover {
     padding: 3px 10px;
     margin: 0 5px;
     cursor: pointer;
-    /* border: 2px solid #e6b800; */
     border: 0;
     font-size: 20px;
     background-color: #e6b800;
-    /* box-shadow: 0 1px 1px rgba(0,0,0,0.3); */
-    /* border-radius: 5px; */
     color: #fff;
 }
 

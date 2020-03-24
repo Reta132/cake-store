@@ -7,7 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
     <title>烘焙坊-Yulita</title>
-</head>
+    <!-- Bootstrap CDN 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+-->
+    </head>
 
 <body>
     <nav>
@@ -21,10 +25,10 @@
             <li><a href="#">聯絡我們</a></li>
         </ol>
 
-        <div id="car">
+        <!-- <div id="car">
             <img src="https://fakeimg.pl/10x15/?retina=1&text=car&font=noto" alt="烘焙坊-Yulita-car">
             <span id="price"></span>
-        </div>
+        </div> -->
     </nav>
 
     <!-- 漢堡鍵 -->
@@ -47,6 +51,7 @@
     <div id="banner-box">
         <section id="banner">
             <img src="https://fakeimg.pl/100x50/?retina=1&text=banner&font=noto" alt="banner">
+        </section>
     </div>
 
     <!-- 最新消息 -->
@@ -84,7 +89,7 @@
             <!-- 生日蛋糕 -->
             <div class="icon-menu">
                 <div class="icon-pic">
-                    <a href="#b-cake"><img src="./img/cake-icon1.png" alt="生日蛋糕" class="fp-cake"></a>
+                    <a href="#birthday"><img src="./img/cake-icon1.png" alt="生日蛋糕" class="fp-cake"></a>
                 </div>
                 <p>生日蛋糕</p>
             </div>
@@ -92,7 +97,7 @@
             <!--美味麵包 -->
             <div class="icon-menu">
                 <div class="icon-pic">
-                    <a href="#d-cake"><img src="./img/cake-icon2.png" alt="美味蛋糕" class="fp-cake"></a>
+                    <a href="#bread"><img src="./img/cake-icon2.png" alt="美味蛋糕" class="fp-cake"></a>
                 </div>
                 <p>美味麵包</p>
             </div>
@@ -101,7 +106,7 @@
 
             <div class="icon-menu">
                 <div class="icon-pic">
-                    <a href="#w-box"><img src="./img/cake-icon3.png" alt="喜餅禮盒" class="fp-cake"></a>
+                    <a href="#marraige"><img src="./img/cake-icon3.png" alt="喜餅禮盒" class="fp-cake"></a>
                 </div>
                 <p>喜餅禮盒</p>
 
@@ -111,7 +116,7 @@
 
             <div class="icon-menu">
                 <div class="icon-pic">
-                    <a href="#m-cake"><img src="./img/cake-icon4.png" alt="彌月蛋糕" class="fp-cake"></a>
+                    <a href="#baby"><img src="./img/cake-icon4.png" alt="彌月蛋糕" class="fp-cake"></a>
                 </div>
                 <p>彌月蛋糕</p>
 
@@ -121,7 +126,7 @@
 
             <div class="icon-menu">
                 <div class="icon-pic">
-                    <a href="#d-box"><img src="./img/cake-icon5.png" alt="點心餐盒" class="fp-cake"></a>
+                    <a href="#snake"><img src="./img/cake-icon5.png" alt="點心餐盒" class="fp-cake"></a>
                 </div>
                 <p>點心餐盒</p>
 
@@ -147,10 +152,9 @@
 
                     <div id="cake1_price" class="price-size">$100</div>
                     <button type="button" id="cake_1_add" class="btn">+</button>
-
                     <span id="cake1Amount" class="amount-size">0</span>
-
                     <button type="button" id="cake_1_sub" class="btn">-</button>
+
                 </div>
                 <div class="cake">
                     <img id="cake2Img" class="c1" src="https://i.ibb.co/NL2mkqy/3.png" alt="生日蛋糕">
@@ -158,10 +162,9 @@
 
                     <div class="price-size" id="cake2_price">$150 </div>
                     <button type="button" id="cake_2_add" class="btn">+</button>
-
                     <span class="amount-size" id="cake2Amount">0</span>
-
                     <button type="button" id="cake_2_sub" class="btn">-</button>
+
                 </div>
                 <div class="cake">
                     <img class="c1" src="https://i.ibb.co/tqyvRCq/2.png" alt="生日蛋糕">
@@ -169,10 +172,9 @@
 
                     <div class="price-size" id="cake3_price">$200 </div>
                     <button type="button" id="cake_3_add" class="btn">+</button>
-
                     <span class="amount-size" id="cake3Amount">0</span>
-
                     <button type="button" id="cake_3_sub" class="btn">-</button>
+
 
                 </div>
                 <div class="cake">
@@ -187,7 +189,6 @@
                 </div>
             </div>
         </div>
-
         <!--  美味麵包內容 -->
         <div id="bread">
             <div class="cake-title">
@@ -197,20 +198,40 @@
                 <div class="cake">
                     <img src="https://i.ibb.co/Z2TqQYy/3.png" alt="美味麵包" class="c2">
                     <p>糖雪風暴</p>
+
+                    <div id="cake5_price" class="price-size">$100</div>
+                    <button type="button" id="cake_5_add" class="btn">+</button>
+                    <span id="cake5Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_5_sub" class="btn">-</button>
                 </div>
 
                 <div class="cake">
                     <img src="https://i.ibb.co/y0xSyJ8/4.png" alt="美味麵包" class="c2">
                     <p>粗糧生活</p>
+
+                    <div id="cake6_price" class="price-size">$100</div>
+                    <button type="button" id="cake_6_add" class="btn">+</button>
+                    <span id="cake6Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_6_sub" class="btn">-</button>
                 </div>
 
                 <div class="cake">
                     <img src="https://i.ibb.co/qD85bvd/1.png" alt="美味麵包" class="c2">
                     <p>記得配醬</p>
+
+                    <div id="cake7_price" class="price-size">$100</div>
+                    <button type="button" id="cake_7_add" class="btn">+</button>
+                    <span id="cake7Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_7_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img class="c2" src="https://i.ibb.co/TgmdxcN/2.png" alt="美味麵包" class="c2">
                     <p>你愛的麵包</p>
+
+                    <div id="cake8_price" class="price-size">$100</div>
+                    <button type="button" id="cake_8_add" class="btn">+</button>
+                    <span id="cake8Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_8_sub" class="btn">-</button>
                 </div>
             </div>
         </div>
@@ -224,18 +245,38 @@
                 <div class="cake">
                     <img src="https://i.ibb.co/N1C9RSW/f90615d826fd859f9deedfeca76478d2.jpg" alt="喜餅禮盒" class="c3">
                     <p>我們結婚了</p>
+
+                    <div id="cake9_price" class="price-size">$100</div>
+                    <button type="button" id="cake_9_add" class="btn">+</button>
+                    <span id="cake9Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_9_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="https://i.ibb.co/HYy7DpD/1ecc4618acc52f99f7b412fbd7e2ef38.jpg" alt="喜餅禮盒" class="c3">
                     <p>情深不知幾何</p>
+
+                    <div id="cake10_price" class="price-size">$100</div>
+                    <button type="button" id="cake_10_add" class="btn">+</button>
+                    <span id="cake10Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_10_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="https://i.ibb.co/p02QVh1/49c00255c178f427fd972793aa595c91.jpg" alt="喜餅禮盒" class="c3">
                     <p>藍色和你</p>
+
+                    <div id="cake11_price" class="price-size">$100</div>
+                    <button type="button" id="cake_11_add" class="btn">+</button>
+                    <span id="cake11Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_11_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="https://i.ibb.co/YhF7sN0/01d958effb0eb6ab46b330a9262d48fe.jpg" alt="喜餅禮盒" class="c3">
                     <p>心心相映</p>
+
+                    <div id="cake12_price" class="price-size">$100</div>
+                    <button type="button" id="cake_12_add" class="btn">+</button>
+                    <span id="cake12Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_12_sub" class="btn">-</button>
                 </div>
             </div>
         </div>
@@ -249,18 +290,38 @@
                 <div class="cake">
                     <img src="./img/baby1.png" alt="彌月蛋糕" class="c4">
                     <p>我們結婚了</p>
+
+                    <div id="cake13_price" class="price-size">$100</div>
+                    <button type="button" id="cake_13_add" class="btn">+</button>
+                    <span id="cake13Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_13_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="./img/baby2.png" alt="彌月蛋糕" class="c4">
                     <p>情深不知幾何</p>
+
+                    <div id="cake14_price" class="price-size">$100</div>
+                    <button type="button" id="cake_14_add" class="btn">+</button>
+                    <span id="cake14Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_14_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="./img/baby3.png" alt="彌月蛋糕" class="c4">
                     <p>藍色和你</p>
+
+                    <div id="cake15_price" class="price-size">$100</div>
+                    <button type="button" id="cake_15_add" class="btn">+</button>
+                    <span id="cake15mount" class="amount-size">0</span>
+                    <button type="button" id="cake_15_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="./img/baby4.png" alt="彌月蛋糕" class="c4">
                     <p>心心相映</p>
+
+                    <div id="cake16_price" class="price-size">$100</div>
+                    <button type="button" id="cake_16_add" class="btn">+</button>
+                    <span id="cake16Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_16_sub" class="btn">-</button>
                 </div>
             </div>
         </div>
@@ -274,18 +335,38 @@
                 <div class="cake">
                     <img src="./img/snake1.jpg" alt="點心餐盒" class="c5">
                     <p>我們結婚了</p>
+
+                    <div id="cake1_price" class="price-size">$100</div>
+                    <button type="button" id="cake_1_add" class="btn">+</button>
+                    <span id="cake1Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_1_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="./img/snake2.jpg" alt="點心餐盒" class="c5">
                     <p>情深不知幾何</p>
+
+                    <div id="cake1_price" class="price-size">$100</div>
+                    <button type="button" id="cake_1_add" class="btn">+</button>
+                    <span id="cake1Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_1_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="./img/snake3.jpg" alt="點心餐盒" class="c5">
                     <p>藍色和你</p>
+
+                    <div id="cake1_price" class="price-size">$100</div>
+                    <button type="button" id="cake_1_add" class="btn">+</button>
+                    <span id="cake1Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_1_sub" class="btn">-</button>
                 </div>
                 <div class="cake">
                     <img src="./img/snake4.jpg" alt="點心餐盒" class="c5">
                     <p>心心相映</p>
+
+                    <div id="cake1_price" class="price-size">$100</div>
+                    <button type="button" id="cake_1_add" class="btn">+</button>
+                    <span id="cake1Amount" class="amount-size">0</span>
+                    <button type="button" id="cake_1_sub" class="btn">-</button>
                 </div>
             </div>
         </div>
@@ -301,12 +382,13 @@
     </div>
 
 
-    <!-- Button trigger modal -->
+    <!-- Button trigger modal 
 
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         顯示圖片
     </button>
-    <!-- Modal -->
+    -->
+    <!-- Modal 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -327,6 +409,7 @@
             </div>
         </div>
     </div>
+    -->
 
 
 
@@ -337,6 +420,17 @@
 
 
     </footer>
+    <!-- Bootstrap CDN 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        -->
 
 </body>
 
