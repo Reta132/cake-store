@@ -12,12 +12,9 @@ nav {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 	position: sticky;
 	top: 0;
+	height: 80px;
 	background-color: rgba(255, 255, 255, 1);
 	z-index: 1;
-}
-
-nav ol{
-    margin: 0 auto;
 }
 
 nav ol li {
@@ -35,7 +32,6 @@ nav ol li a {
 nav ol li a:hover {
 	color: #e6b800;
 }
-
 /* menu */
 #menu {
 	display: none;
