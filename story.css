@@ -135,82 +135,36 @@ nav ol li a:hover {
 	overflow: hidden;
 }
 
-#card {
+#card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 1200px;
-	display: grid;
-	grid-template-columns: 30% 70%;
-	grid-gap: 20px;
-	  /* background-color: gold; */
-	margin: 100px auto;
-}
-
-#content {
+    margin: 50px auto;
+  /*   background-color: gold; */
+    padding: 30px;
+    align-items: top;
+  }
+  
+  #picture{
+    /* display:inline-block; */
+    vertical-align:top;
+    padding: 0 50px;
     /* background-color: gray; */
-    padding-left: 100px;
-	/* margin-left: 30px; */
-}
-
-#content #active {
-    font-weight: bold;
-    color: #e6b800;
-}
-#content h1 {
-	padding: 10px 0;
-}
-#content table tr td {
-	padding: 5px 0;
-	font-size: 20px;
-}
-#content table tr td a {
-	text-decoration: none;
-	color: #000;
-}
-
-#news {
-	/*   background: pink; */
-}
-#news h1 {
-    padding: 10px 0;
-    color: #e6b800;
-}
-#news table tr td {
-	padding: 10px 20px 10px 0;
-}
-#news table tr td a {
-    font-size: 18px;
-	text-decoration: none;
-	color: #000;
-}
-
-#news table tr td a:hover{
-    color: #e6b800;
-}
-
-#page {
-    /*   background: lightblue; */
-    max-width: 1200px;
-    margin: 100px auto;
-    text-align: center;
-}
-
-#page table {
+  }
+  
+  #picture img{
+    width: 500px;
     margin: 0 auto;
-}
+  }
 
-#page #page1 {
-	font-weight: bold;
-}
-#page .page:hover {
-	font-weight: bold;
-}
-#page table tr td {
-	padding: 10px 8px;
-	font-size: 18px;
-}
-#page table tr td a {
-	text-decoration: none;
-	color: #000;
-}
+  #content h1{
+      color: #e6b800;
+      padding: 0px 0 10px;
+  }
+
+  #content p{
+    padding: 15px 0;
+  }
 
 /* ＦＯＯＴＥＲ */
 footer {

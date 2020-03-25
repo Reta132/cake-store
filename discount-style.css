@@ -150,7 +150,7 @@ nav ol li a:hover {
 	/* margin-left: 30px; */
 }
 
-#content #active {
+#discount{
     font-weight: bold;
     color: #e6b800;
 }
@@ -163,7 +163,8 @@ nav ol li a:hover {
 }
 #content table tr td a {
 	text-decoration: none;
-	color: #000;
+    color: #000;
+    font-size: 20px;
 }
 
 #news {
