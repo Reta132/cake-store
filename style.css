@@ -44,7 +44,7 @@ nav ol li a:hover {
 }
 
 #menu img {
-	width: 100px;
+	width: 80px;
 	padding: 20px;
 	position: fixed;
 	top: 0;
@@ -67,8 +67,8 @@ nav ol li a:hover {
 	width: 400px;
 	height: 100vh;
 	position: absolute;
-	top: 0;
-	right: -400px;
+	/* top: 0; */
+	/* right: 400px; */
 	display: none;
 	z-index: 2;
 	padding: 20px;
@@ -125,8 +125,8 @@ nav ol li a:hover {
 	background-image: url(https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
 	background-size: cover;
 	margin-top: -100px;
-	transform: rotate(1);
 	transition: 3s;
+	/* display: none; */
 }
 
 #banner:hover {
@@ -199,8 +199,8 @@ nav ol li a:hover {
 	font-size: 20px;
 	border-radius: 30px;
 	display: inline-block;
-    padding: 10px 20px;
-    margin: 30px 0;
+	padding: 10px 20px;
+	margin: 30px 0;
 	border: 1px solid #e6b800;
 }
 
@@ -215,13 +215,13 @@ nav ol li a:hover {
 
 #icon h1 {
 	font-size: 36px;
-    color: #e6b800;
-    margin: 50px 0;
+	color: #e6b800;
+	margin: 50px 0;
 }
 
 #icon-title {
 	display: grid;
-    grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	/* grid-gap: 50px; */
 }
 
@@ -258,62 +258,64 @@ nav ol li a:hover {
 	background: #fff;
 }*/
 
-
-
 /* ICON內容 */
 #i-content {
-    max-width: 1200px;
-    margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 	/* height: 600px; */
 	font-size: 20px;
 }
 
-.fake-nav{
+.fake-nav {
 	height: 100px;
 	/* background-color: pink; */
 }
 
 .icon-inner {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	/* clear: both; */
 	color: #000;
-    padding: 15px;
-    margin: 20px 0;
+	padding: 15px;
+	margin: 20px 0;
 	text-align: center;
 }
 
-.cake-title{
-    background-color: #e6b800;
-    padding: 20px 0;
+.cake-title {
+	background-color: #e6b800;
+	padding: 20px 0;
 }
 
-.cake-title h1{
-    color: #fff;
-    text-align: center;
+.cake-title h1 {
+	color: #fff;
+	text-align: center;
 }
 
 .price-size {
-    font-size: 18px;
-    margin: 5px 0;
+	font-size: 18px;
+	margin: 5px 0;
 }
 
 .amount-size {
-    font-size: 20px;
-    margin: 0 5px;
+	font-size: 20px;
+	margin: 0 5px;
 }
 
-.btn{
-    padding: 3px 10px;
-    margin: 0 5px;
-    cursor: pointer;
-    border: 0;
-    font-size: 20px;
-    background-color: #e6b800;
-    color: #fff;
+.btn {
+	padding: 3px 10px;
+	margin: 0 5px;
+	cursor: pointer;
+	border: 0;
+	font-size: 20px;
+	background-color: #e6b800;
+	color: #fff;
 }
 
-.c1, .c2, .c3 , .c4, .c5 {
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
 	width: 200px;
 	height: 200px;
 	margin: 20px 0;
@@ -323,8 +325,8 @@ nav ol li a:hover {
 	padding-top: 5px;
 	color: #707070;
 	font-family: 微軟正黑體;
-    font-weight: bold;
-    font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 /* 聯絡方式 */
@@ -347,70 +349,86 @@ footer {
 /* RWD */
 /* 手機 */
 @media screen and (max-width: 768px) {
-		/* 最新消息 */
-		#new-box{
-			grid-template-columns: 1fr;
-		}
-	
-		#active, #discount{
-			grid-template-columns: 1fr;
-			grid-gap: 10px;
-		}
+	/* 漢堡健 */
+	#menu {
+		display: block;
+	}
 
-		.content {
-			margin-left: 0px;
-			text-align: center;
-			/* background-color: indianred; */
-		}
-	
-		.content a{
-			font-size: 20px;
-		}
-	
-		.more{
-			margin: 5px 0;
-		}
-	
-		.new-img {
-			margin: 0 auto;
-			background-color: gold;
-		}
-	
-		/* icon title */
-		#icon-title{
-			grid-template-columns: repeat(2,1fr);
-		}
-	
-		/* icon內容 */
-		.icon-inner {
-			grid-template-columns: repeat(1,1fr);
-		}
-	
-		.cake{
-			margin: 30px 0;
-		}
+	/* 導覽列 */
+	nav {
+		display: none;
+	}
+	/* 最新消息 */
+	#new-box {
+		grid-template-columns: 1fr;
+	}
+
+	#active,
+	#discount {
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+
+	.content {
+		margin-left: 0px;
+		text-align: center;
+		/* background-color: indianred; */
+	}
+
+	.content a {
+		font-size: 20px;
+	}
+
+	.more {
+		margin: 5px 0;
+	}
+
+	.new-img {
+		margin: 0 auto;
+		background-color: gold;
+	}
+
+	/* icon title */
+	#icon-title {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* icon內容 */
+	.icon-inner {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cake {
+		margin: 30px 0;
+	}
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
 	/* 漢堡健 */
-	#menu{
-		
+	#menu {
+		display: block;
+	}
+
+	/* 導覽列 */
+	nav {
+		display: none;
 	}
 
 	/* 最新消息 */
-	#new-box{
+	#new-box {
 		grid-template-columns: 1fr;
 	}
 
-	#active, #discount{
+	#active,
+	#discount {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.content a{
+	.content a {
 		font-size: 20px;
 	}
 
-	.more{
+	.more {
 		margin: 20px 0;
 	}
 
@@ -420,32 +438,41 @@ footer {
 	}
 
 	/* icon title */
-	#icon-title{
-		grid-template-columns: repeat(3,1fr);
+	#icon-title {
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	/* icon內容 */
 	.icon-inner {
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
-
 }
 /* 電腦 */
 @media screen and (min-width: 1024px) {
+	/* 漢堡健 */
+	#menu {
+		display: none;
+	}
+
+	/* 導覽列 */
+	nav {
+		display: block;
+	}
 	/* 最新消息 */
-	#new-box{
+	#new-box {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	#active, #discount{
+	#active,
+	#discount {
 		grid-template-columns: 40% 60%;
 	}
 
-	.content a{
+	.content a {
 		font-size: 16px;
 	}
 
-	.more{
+	.more {
 		margin: 30px 0;
 	}
 
@@ -455,14 +482,12 @@ footer {
 	}
 
 	/* icon title */
-	#icon-title{
-		grid-template-columns: repeat(5,1fr);
+	#icon-title {
+		grid-template-columns: repeat(5, 1fr);
 	}
-	
 
 	/* icon內容 */
 	.icon-inner {
-		grid-template-columns: repeat(4,1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
-
 }
