@@ -154,8 +154,8 @@ nav ol li a:hover {
 #active,
 #discount {
 	display: grid;
-	grid-template-columns: 30% 70%;
-	grid-gap: 80px;
+	grid-template-columns: 40% 60%;
+	grid-gap: 40px;
 	/* background:#e6b800; */
 	padding: 10px;
 	border-radius: 5px;
@@ -163,7 +163,9 @@ nav ol li a:hover {
 
 .content {
 	vertical-align: top;
-	margin-left: 15px;
+	margin-left: 30px;
+	text-align: right;
+	/* background-color: indianred; */
 }
 
 .content h1 {
@@ -181,7 +183,7 @@ nav ol li a:hover {
 }
 
 .new-img {
-	margin-right: 20px;
+	margin-right: 200px;
 	/* background-color: gold; */
 }
 
@@ -226,6 +228,8 @@ nav ol li a:hover {
 .iocn-menu {
 	text-align: center;
 	background-color: gray;
+	font-size: 21px;
+	margin: 20px 0;
 }
 
 .icon-menu p {
@@ -277,8 +281,6 @@ nav ol li a:hover {
 	text-align: center;
 }
 
-
-
 .cake-title{
     background-color: #e6b800;
     padding: 20px 0;
@@ -308,8 +310,6 @@ nav ol li a:hover {
     background-color: #e6b800;
     color: #fff;
 }
-
-
 
 .c1, .c2, .c3 , .c4, .c5 {
 	width: 200px;
@@ -357,10 +357,7 @@ footer {
 
 	#active, #discount{
 		grid-template-columns: 1fr 1fr;
-	}
-
-	.content{
-		text-align: right;
+		text-align: center;
 	}
 
 	h1{
@@ -375,6 +372,11 @@ footer {
 		margin: 20px 0;
 	}
 
+	.new-img {
+		margin-right: 150px;
+		/* background-color: gold; */
+	}
+
 	/* icon title */
 	#icon-title{
 		grid-template-columns: repeat(3,1fr);
@@ -382,7 +384,6 @@ footer {
 
 	.icon-menu p {
 		font-size: 30px;
-		margin: 20px 0;
 	}
 
 	.icon-pic a img {
@@ -431,22 +432,15 @@ footer {
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
-	#menu{
-		/* display: block; */
-	}
 
 	/* 最新消息 */
-
 	#new-box{
 		grid-template-columns: 1fr;
 	}
 
 	#active, #discount{
 		grid-template-columns: 1fr 1fr;
-	}
-
-	.content{
-		text-align: right;
+		text-align: center;
 	}
 
 	h1{
@@ -461,6 +455,11 @@ footer {
 		margin: 20px 0;
 	}
 
+	.new-img {
+		margin-right: 150px;
+		/* background-color: gold; */
+	}
+
 	/* icon title */
 	#icon-title{
 		grid-template-columns: repeat(3,1fr);
@@ -468,12 +467,13 @@ footer {
 
 	.icon-menu p {
 		font-size: 30px;
-		margin: 20px 0;
 	}
 
 	.icon-pic a img {
 		width: 150px;
 	}
+
+	
 
 	/* icon內容 */
 	.icon-inner {
@@ -517,4 +517,88 @@ footer {
 }
 /* 電腦 */
 @media screen and (min-width: 1024px) {
+	#menu{
+		/* display: block; */
+	}
+
+	/* 最新消息 */
+	#new-box{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#active, #discount{
+		grid-template-columns: 40% 60%;
+	}
+
+	h1{
+		font-size: 36px;
+	}
+
+	.content a{
+		font-size: 16px;
+	}
+
+	.more{
+		margin: 30px 0;
+	}
+
+	.new-img {
+		margin-right: 200px;
+		/* background-color: gold; */
+	}
+
+	/* icon title */
+	#icon-title{
+		grid-template-columns: repeat(5,1fr);
+	}
+
+	.icon-menu p {
+		font-size: 21px;
+	}
+
+	.icon-pic a img {
+		width: 150px;
+	}
+
+	
+
+	/* icon內容 */
+	.icon-inner {
+		grid-template-columns: repeat(4,1fr);
+	}
+
+	#icon h1 {
+		font-size: 56px;
+	}
+
+	.c1, .c2, .c3 , .c4, .c5 {
+		width: 300px;
+		height: 300px;
+	}
+
+	#birthday, #bread, #marriage, #baby, #snake{
+		height: 1300px;
+	}
+
+	.cake{
+		margin: 30px 0;
+	}
+
+	.cake p {
+		font-size: 24px;
+	}
+
+	.price-size {
+		font-size: 24px;
+	}
+
+	.amount-size {
+		font-size: 30px;
+	}
+
+	.btn{
+		padding: 3px 15px;
+		font-size: 30px;
+		margin: 0 10px;
+	}
 }
