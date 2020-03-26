@@ -392,6 +392,10 @@ footer {
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
+	/* 漢堡健 */
+	#menu{
+		
+	}
 
 	/* 最新消息 */
 	#new-box{
