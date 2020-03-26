@@ -1,7 +1,12 @@
 * {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	font-family: 微軟正黑體;
+	box-sizing: border-box;
+}
+
+body {
+	height: 30000;
 }
 
 /* 導覽列 */
@@ -132,6 +137,7 @@ nav ol li a:hover {
 	overflow: hidden;
 }
 
+/* 最新優惠 */
 #card {
     max-width: 1200px;
 	display: grid;
@@ -210,12 +216,13 @@ nav ol li a:hover {
 	color: #000;
 }
 
-/* ＦＯＯＴＥＲ */
-footer {
-	margin: 30px auto 0px;
-	height: 100px;
-	line-height: 100px;
-	background-color: #e6b800;
-	color: white;
-	text-align: center;
+/* RWD */
+/* 手機 */
+@media screen and (max-width: 768px) {
+}
+/* 平板 */
+@media screen and (min-width: 769px) {
+}
+/* 電腦 */
+@media screen and (min-width: 1024px) {
 }

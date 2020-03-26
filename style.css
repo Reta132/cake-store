@@ -6,7 +6,7 @@
 }
 
 body {
-	height: 30000;
+	/* height: 30000; */
 }
 
 /* 導覽列 */
@@ -258,22 +258,26 @@ nav ol li a:hover {
 #i-content {
     max-width: 1200px;
     margin: 0 auto;
-    /* margin: 200px 0 0px; */
-    /* max-width: 1200px; */
-	height: 600;
-    font-size: 20px;
+	/* height: 600px; */
+	font-size: 20px;
+}
+
+.fake-nav{
+	height: 100px;
+	/* background-color: pink; */
 }
 
 .icon-inner {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-	clear: both;
+	/* clear: both; */
 	color: #000;
     padding: 15px;
     margin: 20px 0;
-    height: 400px;
-    text-align: center;
+	text-align: center;
 }
+
+
 
 .cake-title{
     background-color: #e6b800;
@@ -305,10 +309,7 @@ nav ol li a:hover {
     color: #fff;
 }
 
-#contract {
-	padding: 40px 0 0 0;
-	text-align: center;
-}
+
 
 .c1, .c2, .c3 , .c4, .c5 {
 	width: 200px;
@@ -324,6 +325,13 @@ nav ol li a:hover {
     font-size: 20px;
 }
 
+/* 聯絡方式 */
+
+#contract {
+	padding: 40px 0 0 0;
+	text-align: center;
+}
+
 /* ＦＯＯＴＥＲ */
 footer {
 	margin: 30px auto 0px;
@@ -337,9 +345,175 @@ footer {
 /* RWD */
 /* 手機 */
 @media screen and (max-width: 768px) {
+	#menu{
+		/* display: block; */
+	}
+
+	/* 最新消息 */
+
+	#new-box{
+		grid-template-columns: 1fr;
+	}
+
+	#active, #discount{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.content{
+		text-align: right;
+	}
+
+	h1{
+		font-size: 46px;
+	}
+
+	.content a{
+		font-size: 20px;
+	}
+
+	.more{
+		margin: 20px 0;
+	}
+
+	/* icon title */
+	#icon-title{
+		grid-template-columns: repeat(3,1fr);
+	}
+
+	.icon-menu p {
+		font-size: 30px;
+		margin: 20px 0;
+	}
+
+	.icon-pic a img {
+		width: 150px;
+	}
+
+	/* icon內容 */
+	.icon-inner {
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	#icon h1 {
+		font-size: 56px;
+	}
+
+	.c1, .c2, .c3 , .c4, .c5 {
+		width: 300px;
+		height: 300px;
+	}
+
+	#birthday, #bread, #marriage, #baby, #snake{
+		height: 1300px;
+	}
+
+	.cake{
+		margin: 30px 0;
+	}
+
+	.cake p {
+		font-size: 30px;
+	}
+
+	.price-size {
+		font-size: 24px;
+	}
+
+	.amount-size {
+		font-size: 30px;
+	}
+
+	.btn{
+		padding: 3px 15px;
+		font-size: 30px;
+		margin: 0 10px;
+	}
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
+	#menu{
+		/* display: block; */
+	}
+
+	/* 最新消息 */
+
+	#new-box{
+		grid-template-columns: 1fr;
+	}
+
+	#active, #discount{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.content{
+		text-align: right;
+	}
+
+	h1{
+		font-size: 46px;
+	}
+
+	.content a{
+		font-size: 20px;
+	}
+
+	.more{
+		margin: 20px 0;
+	}
+
+	/* icon title */
+	#icon-title{
+		grid-template-columns: repeat(3,1fr);
+	}
+
+	.icon-menu p {
+		font-size: 30px;
+		margin: 20px 0;
+	}
+
+	.icon-pic a img {
+		width: 150px;
+	}
+
+	/* icon內容 */
+	.icon-inner {
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	#icon h1 {
+		font-size: 56px;
+	}
+
+	.c1, .c2, .c3 , .c4, .c5 {
+		width: 300px;
+		height: 300px;
+	}
+
+	#birthday, #bread, #marriage, #baby, #snake{
+		height: 1300px;
+	}
+
+	.cake{
+		margin: 30px 0;
+	}
+
+	.cake p {
+		font-size: 30px;
+	}
+
+	.price-size {
+		font-size: 24px;
+	}
+
+	.amount-size {
+		font-size: 30px;
+	}
+
+	.btn{
+		padding: 3px 15px;
+		font-size: 30px;
+		margin: 0 10px;
+	}
 }
 /* 電腦 */
 @media screen and (min-width: 1024px) {
