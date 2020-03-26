@@ -138,36 +138,36 @@ nav ol li a:hover {
 }
 
 /* 品牌故事 */
-#card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
-    margin: 50px auto;
-  /*   background-color: gold; */
-    padding: 30px;
-    align-items: top;
-  }
-  
-  #picture{
-    /* display:inline-block; */
-    vertical-align:top;
-    padding: 0 50px;
-    /* background-color: gray; */
-  }
-  
-  #picture img{
-    width: 500px;
-    margin: 0 auto;
-  }
+#card {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 1200px;
+	margin: 50px auto;
+	/*   background-color: gold; */
+	padding: 30px;
+	align-items: top;
+}
 
-  #content h1{
-      color: #e6b800;
-      padding: 0px 0 10px;
-  }
+#picture {
+	/* display:inline-block; */
+	vertical-align: top;
+	margin: 0 50px;
+	/* background-color: gray; */
+}
 
-  #content p{
-    padding: 15px 0;
-  }
+#picture img {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#content h1 {
+	color: #e6b800;
+	padding: 0px 0 10px;
+}
+
+#content p {
+	padding: 15px 0;
+}
 
 /* ＦＯＯＴＥＲ */
 footer {
@@ -179,13 +179,58 @@ footer {
 	text-align: center;
 }
 
-/* RWD */
+/* RWD*/
 /* 手機 */
 @media screen and (max-width: 768px) {
+	/* 品牌故事 */
+	#card {
+		grid-template-columns: 1fr;
+		max-width: 400px;
+		/*   background-color: gold; */
+	}
+
+	#picture {
+		margin: 0 auto 20px;
+		/* background-color: gray; */
+	}
+
+	#picture img {
+		width: 350px;
+	}
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
+	/* 品牌故事 */
+	#card {
+		grid-template-columns: 1fr;
+		max-width: 700px;
+		/*   background-color: gold; */
+	}
+
+	#picture {
+		margin: 0 auto 20px;
+		/* background-color: gray; */
+	}
+
+	#picture img {
+		width: 700px;
+	}
 }
 /* 電腦 */
 @media screen and (min-width: 1024px) {
-}
+	/* 品牌故事 */
+	#card {
+		grid-template-columns: 1fr 1fr;
+		max-width: 1200px;
+		/*   background-color: gold; */
+	}
+
+	#picture {
+		margin: 0 50px;
+		/* background-color: gray; */
+	}
+
+	#picture img {
+		width: 500px;
+	}
+} 

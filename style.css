@@ -178,12 +178,12 @@ nav ol li a:hover {
 
 .content a:hover {
 	color: #fff;
-	border: none;
+	/* border: none; */
 	background-color: #e6b800;
 }
 
 .new-img {
-	margin-right: 200px;
+	margin-right: 150px;
 	/* background-color: gold; */
 }
 
@@ -234,6 +234,8 @@ nav ol li a:hover {
 
 .icon-menu p {
 	font-size: 20px;
+	/* 平板、手機狀況 */
+	margin-bottom: 30px;
 }
 
 .icon-pic {
@@ -345,90 +347,48 @@ footer {
 /* RWD */
 /* 手機 */
 @media screen and (max-width: 768px) {
-	#menu{
-		/* display: block; */
-	}
+		/* 最新消息 */
+		#new-box{
+			grid-template-columns: 1fr;
+		}
+	
+		#active, #discount{
+			grid-template-columns: 1fr;
+			grid-gap: 10px;
+		}
 
-	/* 最新消息 */
-
-	#new-box{
-		grid-template-columns: 1fr;
-	}
-
-	#active, #discount{
-		grid-template-columns: 1fr 1fr;
-		text-align: center;
-	}
-
-	h1{
-		font-size: 46px;
-	}
-
-	.content a{
-		font-size: 20px;
-	}
-
-	.more{
-		margin: 20px 0;
-	}
-
-	.new-img {
-		margin-right: 150px;
-		/* background-color: gold; */
-	}
-
-	/* icon title */
-	#icon-title{
-		grid-template-columns: repeat(3,1fr);
-	}
-
-	.icon-menu p {
-		font-size: 30px;
-	}
-
-	.icon-pic a img {
-		width: 150px;
-	}
-
-	/* icon內容 */
-	.icon-inner {
-		grid-template-columns: repeat(2,1fr);
-	}
-
-	#icon h1 {
-		font-size: 56px;
-	}
-
-	.c1, .c2, .c3 , .c4, .c5 {
-		width: 300px;
-		height: 300px;
-	}
-
-	#birthday, #bread, #marriage, #baby, #snake{
-		height: 1300px;
-	}
-
-	.cake{
-		margin: 30px 0;
-	}
-
-	.cake p {
-		font-size: 30px;
-	}
-
-	.price-size {
-		font-size: 24px;
-	}
-
-	.amount-size {
-		font-size: 30px;
-	}
-
-	.btn{
-		padding: 3px 15px;
-		font-size: 30px;
-		margin: 0 10px;
-	}
+		.content {
+			margin-left: 0px;
+			text-align: center;
+			/* background-color: indianred; */
+		}
+	
+		.content a{
+			font-size: 20px;
+		}
+	
+		.more{
+			margin: 5px 0;
+		}
+	
+		.new-img {
+			margin: 0 auto;
+			background-color: gold;
+		}
+	
+		/* icon title */
+		#icon-title{
+			grid-template-columns: repeat(2,1fr);
+		}
+	
+		/* icon內容 */
+		.icon-inner {
+			grid-template-columns: repeat(1,1fr);
+		}
+	
+		.cake{
+			margin: 30px 0;
+		}
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
@@ -440,11 +400,6 @@ footer {
 
 	#active, #discount{
 		grid-template-columns: 1fr 1fr;
-		text-align: center;
-	}
-
-	h1{
-		font-size: 46px;
 	}
 
 	.content a{
@@ -465,62 +420,14 @@ footer {
 		grid-template-columns: repeat(3,1fr);
 	}
 
-	.icon-menu p {
-		font-size: 30px;
-	}
-
-	.icon-pic a img {
-		width: 150px;
-	}
-
-	
-
 	/* icon內容 */
 	.icon-inner {
 		grid-template-columns: repeat(2,1fr);
 	}
 
-	#icon h1 {
-		font-size: 56px;
-	}
-
-	.c1, .c2, .c3 , .c4, .c5 {
-		width: 300px;
-		height: 300px;
-	}
-
-	#birthday, #bread, #marriage, #baby, #snake{
-		height: 1300px;
-	}
-
-	.cake{
-		margin: 30px 0;
-	}
-
-	.cake p {
-		font-size: 30px;
-	}
-
-	.price-size {
-		font-size: 24px;
-	}
-
-	.amount-size {
-		font-size: 30px;
-	}
-
-	.btn{
-		padding: 3px 15px;
-		font-size: 30px;
-		margin: 0 10px;
-	}
 }
 /* 電腦 */
 @media screen and (min-width: 1024px) {
-	#menu{
-		/* display: block; */
-	}
-
 	/* 最新消息 */
 	#new-box{
 		grid-template-columns: 1fr 1fr;
@@ -528,10 +435,6 @@ footer {
 
 	#active, #discount{
 		grid-template-columns: 40% 60%;
-	}
-
-	h1{
-		font-size: 36px;
 	}
 
 	.content a{
@@ -543,7 +446,7 @@ footer {
 	}
 
 	.new-img {
-		margin-right: 200px;
+		margin-right: 150px;
 		/* background-color: gold; */
 	}
 
@@ -551,15 +454,6 @@ footer {
 	#icon-title{
 		grid-template-columns: repeat(5,1fr);
 	}
-
-	.icon-menu p {
-		font-size: 21px;
-	}
-
-	.icon-pic a img {
-		width: 150px;
-	}
-
 	
 
 	/* icon內容 */
@@ -567,38 +461,4 @@ footer {
 		grid-template-columns: repeat(4,1fr);
 	}
 
-	#icon h1 {
-		font-size: 56px;
-	}
-
-	.c1, .c2, .c3 , .c4, .c5 {
-		width: 300px;
-		height: 300px;
-	}
-
-	#birthday, #bread, #marriage, #baby, #snake{
-		height: 1300px;
-	}
-
-	.cake{
-		margin: 30px 0;
-	}
-
-	.cake p {
-		font-size: 24px;
-	}
-
-	.price-size {
-		font-size: 24px;
-	}
-
-	.amount-size {
-		font-size: 30px;
-	}
-
-	.btn{
-		padding: 3px 15px;
-		font-size: 30px;
-		margin: 0 10px;
-	}
 }

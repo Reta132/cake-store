@@ -137,25 +137,25 @@ nav ol li a:hover {
 	overflow: hidden;
 }
 
-/* 最新優惠 */
+/* 最新消息 */
+
 #card {
-    max-width: 1200px;
+	max-width: 1200px;
 	display: grid;
 	grid-template-columns: 30% 70%;
 	grid-gap: 20px;
-	  /* background-color: gold; */
+	/* background-color: gold; */
 	margin: 100px auto;
 }
 
 #content {
-    /* background-color: gray; */
-    padding-left: 100px;
-	/* margin-left: 30px; */
+	/* background-color: gray; */
+	padding-left: 100px;
 }
 
-#discount{
-    font-weight: bold;
-    color: #e6b800;
+#content #discount {
+	font-weight: bold;
+	color: #e6b800;
 }
 #content h1 {
 	padding: 10px 0;
@@ -166,39 +166,38 @@ nav ol li a:hover {
 }
 #content table tr td a {
 	text-decoration: none;
-    color: #000;
-    font-size: 20px;
+	color: #000;
 }
 
-#news {
-	/*   background: pink; */
-}
 #news h1 {
-    padding: 10px 0;
-    color: #e6b800;
+	padding: 10px 0;
+	color: #e6b800;
 }
+
+
 #news table tr td {
 	padding: 10px 20px 10px 0;
 }
 #news table tr td a {
-    font-size: 18px;
+	font-size: 18px;
+	font-weight: 450;
 	text-decoration: none;
 	color: #000;
 }
 
-#news table tr td a:hover{
-    color: #e6b800;
+#news table tr td a:hover {
+	color: #e6b800;
 }
 
 #page {
-    /*   background: lightblue; */
-    max-width: 1200px;
-    margin: 100px auto;
-    text-align: center;
+	/*   background: lightblue; */
+	max-width: 1200px;
+	margin: 100px auto;
+	text-align: center;
 }
 
 #page table {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 #page #page1 {
@@ -216,9 +215,44 @@ nav ol li a:hover {
 	color: #000;
 }
 
+/* ＦＯＯＴＥＲ */
+footer {
+	margin: 30px auto 0px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #e6b800;
+	color: white;
+	text-align: center;
+}
+
 /* RWD */
 /* 手機 */
 @media screen and (max-width: 768px) {
+	#card {
+		grid-template-columns: 1fr;
+		margin: 0 auto;
+		/* background-color:lightgray; */
+	}
+
+	#content {
+		background-color: #f5f5f5;
+		padding: 10px 200px;
+		margin: 0 auto;
+	}
+
+	#news {
+		padding: 0 20%;
+	}
+
+	#news table tr {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 10px 0;
+	}
+
+	#news table tr td {
+		padding: 3px 0;
+	}
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
