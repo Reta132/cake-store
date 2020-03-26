@@ -456,7 +456,7 @@ footer {
 
 	/* 導覽列 */
 	nav {
-		display: block;
+		display: flex;
 	}
 	/* 最新消息 */
 	#new-box {
